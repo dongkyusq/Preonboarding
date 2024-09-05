@@ -1,6 +1,6 @@
 // src/pages/RegisterPage.tsx
 import { useState } from "react";
-import { registerUser } from "../api/authApi";
+// import { registerUser } from "../api/authApi";
 
 export const RegisterPage = () => {
   const [id, setId] = useState("");
@@ -12,7 +12,7 @@ export const RegisterPage = () => {
   const handleRegister = async () => {
     try {
       console.log({ id, password, nickname }); // 요청 데이터 확인
-      const response = await registerUser({ id, password, nickname });
+      // const response = await registerUser({ id, password, nickname });
       setSuccessMessage("회원가입이 성공적으로 완료되었습니다.");
       setErrorMessage(""); // 에러 메시지 초기화
     } catch (error: any) {

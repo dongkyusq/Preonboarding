@@ -6,7 +6,6 @@ import { LoginPage } from "./pages/LoginPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { MyPage } from "./pages/MyPage";
 import * as Sentry from "@sentry/react"; // Sentry 모듈 추가
-import { BrowserTracing } from "@sentry/tracing";
 import { Replay } from "@sentry/replay"; // Replay 모듈 추가
 import "./index.css";
 
