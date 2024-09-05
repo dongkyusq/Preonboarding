@@ -3,5 +3,12 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "module": "commonjs", // CommonJS 모듈 시스템 사용
+    "esModuleInterop": true, // ES 모듈 호환성 활성화
+    "target": "es6", // ECMAScript 6으로 트랜스파일링
+    "jsx": "react", // React JSX 지원
+    "strict": true
+  }
 }
